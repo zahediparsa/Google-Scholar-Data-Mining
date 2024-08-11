@@ -56,6 +56,8 @@ The project involves three main tables:
 | v_email_at    | Verified email domain.                            |
 | cited_by      | Number of citations the professor has received.   |
 | interests     | Research interests of the professor.              |
+| h-index       | The h-index of the professor. *(Added later)*     |
+| i10-index     | The i10-index of the professor. *(Added later)*   |
 
 ### Article Table
 
