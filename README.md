@@ -19,6 +19,7 @@ This project involves the collection, processing, and analysis of data related t
     - [Step 3: Filter Articles](#step-3-filter-articles)
     - [Data Size (after preprocessing)](#data-size-after-preprocessing)
   - [Article Classification](#article-classification)
+    - [Subject Classification](#subject-classification)
 
 ## Project Overview
 
@@ -102,4 +103,33 @@ Before filtering, the `h-index` and `i10-index` are calculated for all professor
 
 ## Article Classification
 
-The remaining articles are classified into various subjects using a large language model (Llama3.1:8b).
+The remaining articles are classified into folloing subjects using a large language model (Llama3.1:8b).
+
+### Subject Classification
+
+- Agricultural and Biological Sciences
+- Arts and Humanities
+- Biochemistry, Genetics and Molecular Biology
+- Business, Management and Accounting
+- Chemical Engineering
+- Chemistry
+- Computer Science
+- Decision Sciences
+- Dentistry
+- Earth and Planetary Sciences
+- Economics, Econometrics and Finance
+- Energy
+- Engineering
+- Environmental Science
+- Health Professions
+- Immunology and Microbiology
+- Materials Science
+- Mathematics
+- Medicine
+- Neuroscience
+- Nursing
+- Pharmacology, Toxicology and Pharmaceutics
+- Physics and Astronomy
+- Psychology
+- Social Sciences
+- Veterinary
