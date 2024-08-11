@@ -42,7 +42,7 @@ The project involves three main tables:
 |-----------------|--------------------------------------------|
 | university_name | Name of the university.                    |
 | town            | City where the university is located.      |
-| is_govermental  | is the university a subset of government universities? 1 or 0|
+| is_governmental  | is the university a subset of government universities? 1 or 0|
 
 ### Professor Table
 
