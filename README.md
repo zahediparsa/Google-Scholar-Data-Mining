@@ -107,29 +107,50 @@ The remaining articles are classified into folloing subjects using a large langu
 
 ### Subject Classification
 
-- Agricultural and Biological Sciences
-- Arts and Humanities
-- Biochemistry, Genetics and Molecular Biology
-- Business, Management and Accounting
-- Chemical Engineering
-- Chemistry
-- Computer Science
-- Decision Sciences
-- Dentistry
-- Earth and Planetary Sciences
-- Economics, Econometrics and Finance
-- Energy
-- Engineering
-- Environmental Science
-- Health Professions
-- Immunology and Microbiology
-- Materials Science
-- Mathematics
-- Medicine
-- Neuroscience
-- Nursing
-- Pharmacology, Toxicology and Pharmaceutics
-- Physics and Astronomy
-- Psychology
-- Social Sciences
-- Veterinary
+<table border="0">
+  <tr>
+    <td>Agricultural and Biological Sciences</td>
+    <td>Business, Management and Accounting</td>
+    <td>Energy</td>
+  </tr>
+  <tr>
+    <td>Arts and Humanities</td>
+    <td>Chemical Engineering</td>
+    <td>Engineering</td>
+  </tr>
+  <tr>
+    <td>Biochemistry, Genetics and Molecular Biology</td>
+    <td>Chemistry</td>
+    <td>Environmental Science</td>
+  </tr>
+  <tr>
+    <td>Computer Science</td>
+    <td>Decision Sciences</td>
+    <td>Health Professions</td>
+  </tr>
+  <tr>
+    <td>Dentistry</td>
+    <td>Earth and Planetary Sciences</td>
+    <td>Immunology and Microbiology</td>
+  </tr>
+  <tr>
+    <td>Materials Science</td>
+    <td>Mathematics</td>
+    <td>Medicine</td>
+  </tr>
+  <tr>
+    <td>Neuroscience</td>
+    <td>Nursing</td>
+    <td>Pharmacology, Toxicology and Pharmaceutics</td>
+  </tr>
+  <tr>
+    <td>Physics and Astronomy</td>
+    <td>Psychology</td>
+    <td>Social Sciences</td>
+  </tr>
+  <tr>
+    <td>Veterinary</td>
+    <td>Economics, Econometrics and Finance</td>
+    <td></td>
+  </tr>
+</table>
