@@ -27,11 +27,11 @@ This project focuses on scraping data related to Iranian universities, professor
 
 ### Data Size
 
-| Data Type   | Quantity  |
-|-------------|-----------|
-| Universities| 90        |
-| Professors  | ~50,000   |
-| Articles    | ~1.5 million |
+| Data Type    | Quantity     |
+| ------------ | ------------ |
+| Universities | 90           |
+| Professors   | ~50,000      |
+| Articles     | ~1.5 million |
 
 ## Data Structure
 
@@ -39,38 +39,38 @@ The project involves three main tables:
 
 ### University Table
 
-| Column Name     | Description                                |
-|-----------------|--------------------------------------------|
-| university_name | Name of the university.                    |
-| town            | City where the university is located.      |
-| is_governmental  | is the university a subset of government universities? 1 or 0|
+| Column Name     | Description                                                   |
+| --------------- | ------------------------------------------------------------- |
+| university_name | Name of the university.                                       |
+| town            | City where the university is located.                         |
+| is_governmental | is the university a subset of government universities? 1 or 0 |
 
 ### Professor Table
 
-| Column Name   | Description                                       |
-|---------------|---------------------------------------------------|
-| id            | Unique identifier for the professor.              |
-| name          | Name of the professor.                            |
-| university    | University with which the professor is affiliated.|
-| user_id       | Google Scholar ID of the professor.               |
-| affiliation   | Affiliation details of the professor.             |
-| v_email_at    | Verified email domain.                            |
-| cited_by      | Number of citations the professor has received.   |
-| interests     | Research interests of the professor.              |
-| h-index       | The h-index of the professor. *(Added later)*     |
-| i10-index     | The i10-index of the professor. *(Added later)*   |
+| Column Name | Description                                        |
+| ----------- | -------------------------------------------------- |
+| id          | Unique identifier for the professor.               |
+| name        | Name of the professor.                             |
+| university  | University with which the professor is affiliated. |
+| user_id     | Google Scholar ID of the professor.                |
+| affiliation | Affiliation details of the professor.              |
+| v_email_at  | Verified email domain.                             |
+| cited_by    | Number of citations the professor has received.    |
+| interests   | Research interests of the professor.               |
+| h-index     | The h-index of the professor. *(Added later)*      |
+| i10-index   | The i10-index of the professor. *(Added later)*    |
 
 ### Article Table
 
-| Column Name | Description                                       |
-|-------------|---------------------------------------------------|
-| title       | Title of the article.                             |
-| GS_link     | Google Scholar link to the article.               |
-| year        | Year of publication.                              |
-| cite        | Number of citations the article has received.     |
-| main_authors| Main authors of the article.                      |
-| more_info   | Additional information related to the article.    |
-| link_ids    | List of Google Scholar IDs of the authors.        |
+| Column Name  | Description                                    |
+| ------------ | ---------------------------------------------- |
+| title        | Title of the article.                          |
+| GS_link      | Google Scholar link to the article.            |
+| year         | Year of publication.                           |
+| cite         | Number of citations the article has received.  |
+| main_authors | Main authors of the article.                   |
+| more_info    | Additional information related to the article. |
+| link_ids     | List of Google Scholar IDs of the authors.     |
 
 ## Preprocessing Steps
 
@@ -95,11 +95,11 @@ Before filtering, the `h-index` and `i10-index` are calculated for all professor
 
 ### Data Size (after preprocessing)
 
-| Data Type   | Quantity  |
-|-------------|-----------|
-| Universities| 66        |
-| Professors  | ~15,000   |
-| Articles    | ~350,000  |
+| Data Type    | Quantity |
+| ------------ | -------- |
+| Universities | 66       |
+| Professors   | ~15,000  |
+| Articles     | ~230,000 |
 
 ## Article Classification
 
@@ -116,7 +116,7 @@ The remaining articles are classified into folloing subjects using a large langu
   <tr>
     <td>Arts and Humanities</td>
     <td>Chemical Engineering</td>
-    <td>Engineering</td>
+    <td>Veterinary</td>
   </tr>
   <tr>
     <td>Biochemistry, Genetics and Molecular Biology</td>
@@ -126,7 +126,7 @@ The remaining articles are classified into folloing subjects using a large langu
   <tr>
     <td>Computer Science</td>
     <td>Decision Sciences</td>
-    <td>Health Professions</td>
+    <td>Economics, Econometrics and Finance</td>
   </tr>
   <tr>
     <td>Dentistry</td>
@@ -147,10 +147,5 @@ The remaining articles are classified into folloing subjects using a large langu
     <td>Physics and Astronomy</td>
     <td>Psychology</td>
     <td>Social Sciences</td>
-  </tr>
-  <tr>
-    <td>Veterinary</td>
-    <td>Economics, Econometrics and Finance</td>
-    <td></td>
   </tr>
 </table>
