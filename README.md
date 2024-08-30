@@ -20,6 +20,8 @@ This project involves the collection, processing, and analysis of data related t
     - [Data Size (after preprocessing)](#data-size-after-preprocessing)
   - [Article Classification](#article-classification)
     - [Subject Classification](#subject-classification)
+  - [Feature Extraction](#feature-extraction)
+    - [Breadth and Depth Calculation](#breadth-and-depth-calculation)
 
 ## Project Overview
 
@@ -39,11 +41,15 @@ The project involves three main tables:
 
 ### University Table
 
-| Column Name     | Description                                                   |
-| --------------- | ------------------------------------------------------------- |
-| university_name | Name of the university.                                       |
-| town            | City where the university is located.                         |
-| is_governmental | is the university a subset of government universities? 1 or 0 |
+| Column Name                 | Description                                                                 |
+| --------------------------- | --------------------------------------------------------------------------- |
+| university_name             | Name of the university.                                                     |
+| town                        | City where the university is located.                                       |
+| is_governmental             | Indicates if the university is government-funded (1 for yes, 0 for no).     |
+| touch_with_10               | Number of subjects where the university has published more than 10 articles.*(Added later)* |
+| depth_with_200              | Number of subjects where the university has published more than 200 articles.*(Added later)* |
+| depth_with_uni_mean         | Number of subjects where the article count exceeds the university-specific average (calculated as the square root of the total articles). *(Added later)* |
+| depth_with_subject_mean     | Number of subjects where the article count exceeds the subject-specific average (calculated as the square root of the total articles in that subject across all universities). *(Added later)* |
 
 ### Professor Table
 
@@ -149,3 +155,17 @@ The remaining articles are classified into folloing subjects using a large langu
     <td>Social Sciences</td>
   </tr>
 </table>
+
+## Feature Extraction
+
+### Breadth and Depth Calculation
+
+For each university, the following metrics were calculated:
+
+- **Breadth (touch_with_10):** This metric counts the number of subjects where the university has published more than 10 articles. It provides an indication of how widely the university's research output is spread across different subjects.
+
+- **Depth with University Mean (depth_with_uni_mean):** This metric counts the number of subjects where the university has published more articles than the calculated threshold specific to that university (based on the square root of the total number of articles from the university). It offers a relative measure of depth compared to the university's overall output.
+
+- **Depth with Subject Mean (depth_with_subject_mean):** This metric counts the number of subjects where the university has published more articles than the calculated threshold specific to that subject (based on the square root of the total number of articles in that subject across all universities). It provides a relative measure of depth compared to the overall output in that subject.
+
+- **Depth (depth_with_200):** This metric counts the number of subjects where the university has published more than 200 articles. It highlights the subjects where the university has significant research output, indicating areas of specialization.
