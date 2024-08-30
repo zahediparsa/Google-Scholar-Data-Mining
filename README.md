@@ -4,24 +4,23 @@ This project involves the collection, processing, and analysis of data related t
 
 ## Table of Contents
 
-- [Iranian University Professors and Articles Data Analysis](#iranian-university-professors-and-articles-data-analysis)
-  - [Table of Contents](#table-of-contents)
-  - [Project Overview](#project-overview)
-    - [Data Size](#data-size)
-  - [Data Structure](#data-structure)
-    - [University Table](#university-table)
-    - [Professor Table](#professor-table)
-    - [Article Table](#article-table)
-  - [Preprocessing Steps](#preprocessing-steps)
-    - [Step 0: Calculate h-index and i10-index](#step-0-calculate-h-index-and-i10-index)
-    - [Step 1: Filter Universities](#step-1-filter-universities)
-    - [Step 2: Filter Professors](#step-2-filter-professors)
-    - [Step 3: Filter Articles](#step-3-filter-articles)
-    - [Data Size (after preprocessing)](#data-size-after-preprocessing)
-  - [Article Classification](#article-classification)
-    - [Subject Classification](#subject-classification)
-  - [Feature Extraction](#feature-extraction)
-    - [Breadth and Depth Calculation](#breadth-and-depth-calculation)
+- [Table of Contents](#table-of-contents)
+- [Project Overview](#project-overview)
+  - [Data Size](#data-size)
+- [Data Structure](#data-structure)
+  - [University Table](#university-table)
+  - [Professor Table](#professor-table)
+  - [Article Table](#article-table)
+- [Preprocessing Steps](#preprocessing-steps)
+  - [Step 0: Calculate h-index and i10-index](#step-0-calculate-h-index-and-i10-index)
+  - [Step 1: Filter Universities](#step-1-filter-universities)
+  - [Step 2: Filter Professors](#step-2-filter-professors)
+  - [Step 3: Filter Articles](#step-3-filter-articles)
+  - [Data Size (after preprocessing)](#data-size-after-preprocessing)
+- [Article Classification](#article-classification)
+  - [Subject Classification](#subject-classification)
+- [Feature Extraction](#feature-extraction)
+  - [Breadth and Depth Calculation](#breadth-and-depth-calculation)
 
 ## Project Overview
 
@@ -48,8 +47,8 @@ The project involves three main tables:
 | is_governmental             | Indicates if the university is government-funded (1 for yes, 0 for no).     |
 | touch_with_10               | Number of subjects where the university has published more than 10 articles.*(Added later)* |
 | depth_with_200              | Number of subjects where the university has published more than 200 articles.*(Added later)* |
-| depth_with_uni_mean         | Number of subjects where the article count exceeds the university-specific average (calculated as the square root of the total articles). *(Added later)* |
-| depth_with_subject_mean     | Number of subjects where the article count exceeds the subject-specific average (calculated as the square root of the total articles in that subject across all universities). *(Added later)* |
+| depth_with_uni_mean         | Number of subjects where the article count exceeds the university-specific average. *(Added later)* |
+| depth_with_subject_mean     | Number of subjects where the article count exceeds the subject-specific average. *(Added later)* |
 
 ### Professor Table
 
