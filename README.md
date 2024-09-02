@@ -67,15 +67,16 @@ The project involves three main tables:
 
 ### Article Table
 
-| Column Name  | Description                                    |
-| ------------ | ---------------------------------------------- |
-| title        | Title of the article.                          |
-| GS_link      | Google Scholar link to the article.            |
-| year         | Year of publication.                           |
-| cite         | Number of citations the article has received.  |
-| main_authors | Main authors of the article.                   |
-| more_info    | Additional information related to the article. |
-| link_ids     | List of Google Scholar IDs of the authors.     |
+| Column Name  | Description                                        |
+| ------------ | ---------------------------------------------------|
+| title        | Title of the article.                              |
+| GS_link      | Google Scholar link to the article.                |
+| year         | Year of publication.                               |
+| cite         | Number of citations the article has received.      |
+| main_authors | Main authors of the article.                       |
+| more_info    | Additional information related to the article.     |
+| link_ids     | List of Google Scholar IDs of the authors.         |
+|llama_subjects| titles classified using Llama3.1:8b *(Added later)*|
 
 ## Preprocessing Steps
 
@@ -86,7 +87,7 @@ Before filtering, the `h-index` and `i10-index` are calculated for all professor
 ### Step 1: Filter Universities
 
 - **Exclude Non-Governmental Universities:** Remove all universities that are not government-funded.
-- **Exclude Medical Universities:** Remove all universities that are specialized in medical sciences.
+- **Exclude Medical Universities:** Remove all universities that specialize in medical sciences.
 
 ### Step 2: Filter Professors
 
@@ -108,7 +109,7 @@ Before filtering, the `h-index` and `i10-index` are calculated for all professor
 
 ## Article Classification
 
-The remaining articles are classified into folloing subjects using a large language model (Llama3.1:8b).
+The remaining articles are classified into the following subjects using a large language model (Llama3.1:8b).
 
 ### Subject Classification
 
@@ -161,7 +162,7 @@ The remaining articles are classified into folloing subjects using a large langu
 
 For each university, the following metrics were calculated:
 
-- **Breadth (touch_with_10):** This metric counts the number of subjects where the university has published more than 10 articles. It provides an indication of how widely the university's research output is spread across different subjects.
+- **Breadth (touch_with_10):** This metric counts the number of subjects where the university has published more than 10 articles. It indicates how widely the university's research output is spread across different subjects.
 
 - **Depth with University Mean (depth_with_uni_mean):** This metric counts the number of subjects where the university has published more articles than the calculated threshold specific to that university (based on the square root of the total number of articles from the university). It offers a relative measure of depth compared to the university's overall output.
 
