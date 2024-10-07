@@ -1,6 +1,6 @@
 # Iranian University Professors and Articles Data Analysis
 
-This project involves the collection, processing, and analysis of data related to Iranian universities, their professors, and their published articles, primarily sourced from Google Scholar. The aim is to filter and classify academic content based on specific criteria, using a large language model (LLM) for classification.
+This project involves collecting, processing, and analyzing data related to Iranian universities, their professors, and their published articles, sourced from Google Scholar. The aim is to filter and classify academic content based on specific criteria, using a large language model (LLM) for classification.
 
 ## Table of Contents
 
@@ -24,7 +24,7 @@ This project involves the collection, processing, and analysis of data related t
 
 ## Project Overview
 
-This project focuses on scraping data related to Iranian universities, professors, and their articles from Google Scholar. After the initial data collection, the data is filtered based on a set of criteria. Finally, the articles are classified into different subjects using an LLM model.
+This project focuses on scraping data related to Iranian universities and professors and their articles from Google Scholar. After the initial data collection, the data is filtered based on a set of criteria. Finally, the articles are classified into different subjects using an LLM model.
 
 ### Data Size
 
