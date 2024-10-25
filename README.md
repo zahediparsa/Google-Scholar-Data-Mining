@@ -24,7 +24,7 @@ This project involves collecting, processing, and analyzing data related to Iran
 
 ## Project Overview
 
-This project focuses on scraping data related to Iranian universities and professors and their articles from Google Scholar. After the initial data collection, the data is filtered based on a set of criteria. Finally, the articles are classified into different subjects using an LLM model.
+This project focuses on scraping data (scrapping code can be found here https://github.com/Mmli081/Articles-analysis) related to Iranian universities and professors and their articles from Google Scholar. After the initial data collection, the data is filtered based on a set of criteria. Finally, the articles are classified into different subjects using an LLM model.
 
 ### Data Size
 
